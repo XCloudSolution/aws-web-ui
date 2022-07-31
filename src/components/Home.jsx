@@ -8,7 +8,7 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://ec2-52-90-231-205.compute-1.amazonaws.com/products")
+    fetch("http://10.0.2.39:80/products")
       .then((response) => response.json())
       .then((records) => {
         this.setState({
