@@ -8,7 +8,7 @@ class Home extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://10.0.2.39:80/products")
+    fetch("https://fakestoreapi.com/products/")
       .then((response) => response.json())
       .then((records) => {
         this.setState({
